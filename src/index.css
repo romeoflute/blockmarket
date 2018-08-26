@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.store-card {
+  color: #fff;
+  background-color: #39476f !important;
+}
+
+.product-card {
+  background-color: #fff;
+}
+
+.product-img,
+.store-img {
+  object-fit: cover;
+  height: 180px;
+  width: 318px;
+}
+
+.card-title { 
+  text-align: center;
+}
+
+.card-subtitle {
+  font-family: 'Oswald', 'Arial Narrow', sans-serif;
+  color: #ff8c00;
+}

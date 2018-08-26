@@ -1,0 +1,115 @@
+/* PAGE */
+
+body,
+.pure-g [class*=pure-u] {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', 'Arial Narrow', sans-serif;
+}
+
+code {
+  display: block;
+  margin: 20px 0 15px 0;
+  padding: 10px;
+  background: #eee;
+}
+
+.container {
+  width: 85%; 
+  padding: 40px 60px;
+} 
+
+.pure-u-1-1 .container {
+  width: 100%;
+}
+
+.customHr {
+  width: 100px;
+  color: rgba(0, 0, 0, 0);
+  line-height: 1px;
+  height: 1px;
+
+  background-color: rgb(156, 153, 153);
+  margin-top: -6px;
+  margin-bottom: 5px;
+}
+
+.pure-button-primary {
+  background-color: #0c1a2b;
+}
+
+.pure-button-primary:hover {
+  background-color: #233e5e;
+}
+
+.pure-form input[type="text"]:focus {
+  border-color: #0c1a2b;
+}
+
+/* NAVBAR */
+
+.navbar {
+  position: fixed;
+  padding: 5px;
+  background: #0c1a2b;
+  font-family: 'Oswald', 'Arial Narrow', sans-serif;
+  box-shadow: 0 0 4px grey;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.navbar a:active,
+.navbar a:focus,
+.navbar a:hover {
+  background: #c2d6ee;
+}
+
+.navbar .pure-menu-heading {
+  font-weight: bold;
+  text-transform: none;
+}
+
+.navbar .navbar-right {
+  float: right;
+}
+
+.navbar .uport-logo {
+  height: 16px;
+  margin-right: 10px;
+}
+
+div.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+div.card {
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 320px;
+  margin: 10px;
+  align-items: center;
+  padding: 0;
+}
+
+.overlay::before {
+  content: "";
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background-color: #fff;
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+}
+
+.show { opacity: 1; }
