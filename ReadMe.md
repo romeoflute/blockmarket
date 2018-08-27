@@ -91,7 +91,9 @@ $ ./ipfs daemon
 ```
 If you are unable to install IPFS, then you can still test but without adding images and descriptions to stores and products.
 
-5.Deploy the contracts using Truffle. 
+5.Clone or download the BlockMarket code from the repository and open the root folder in your IDE (I use Visual Studio Code but you may have a different IDE such as Sublime or Atom). 
+
+6.Deploy the contracts using Truffle. 
 
 In the Terminal: 
 
@@ -102,7 +104,7 @@ $ truffle migrate --reset
 ```
 The contracts are now deployed. 
 
-6.Clone or download the BlockMarket code from the repository and open the root folder in your IDE (I use Visual Studio Code but you may have a different IDE such as Sublime or Atom). 
+**Note:** It is important that you clone the code first, then compile and deploy contracts, before running the web server. In other words, _step 5, then 6, before 7_. 
 
 7.Install the dependencies and devDependencies and start the server.
 
@@ -114,8 +116,7 @@ $ npm install
 $ npm start
 ```
 If the site does not open in Chrome, open the website in Chrome with Metamask extension installed and the first 4 Ganache accounts imported to it. 
-
-**Note:** In MetaMask select the first account in Ganache (shown in the Terminal when you run: ganache-cli -l 7984452. Also, BE SURE to **connect MetaMask to localhost 8545** by selecting that in the dropdown in the MetaMask extension. 
+ In MetaMask select the first account in Ganache (shown in the Terminal when you run: ganache-cli -l 7984452. Also, BE SURE to **connect MetaMask to localhost 8545** by selecting that in the dropdown in the MetaMask extension. 
 
 In the top of the website, your account address is displayed with the role of Marketplace Owner. You may proceed to Testing the Website. 
 
